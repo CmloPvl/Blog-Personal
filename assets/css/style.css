@@ -1,0 +1,205 @@
+/* Reset básico para consistencia cross-browser */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente base */
+html {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos base para body */
+body {
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* altura mínima: toda la ventana */
+  margin: 0;
+}
+
+/* Header y navbar */
+header {
+  background-color: #222;
+  padding: 1rem 3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #1e90ff;
+  font-weight: 700;
+  font-size: 1.75rem;
+  cursor: default;
+  -webkit-text-stroke: 0.5px white;
+  font-weight: bold;
+  background-image: linear-gradient(var(--angle), rgb(228, 228, 233), rgb(65, 59, 185));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: move 4s linear alternate infinite;
+  letter-spacing: 1rem;
+  word-spacing: 1rem;
+  
+}
+
+@keyframes move {
+  0% { --angle: 0.25turn }
+  100% { --angle: 0.75turn }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0turn;
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1e90ff;
+}
+
+/* termino de css para header y comienzo de card */
+
+main {
+  flex: 1;
+}
+
+/* Estilo general para la sección de artículos */
+.articulos-destacados {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.articulos-destacados h2 {
+  font-size: 2.5rem;
+  color: #1e90ff;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px; 
+  text-underline-offset: 10px;
+  text-decoration-color: hsl(193, 80%, 65%);
+  --more: 2px;
+  --minus: calc(var(--more) * -1);
+  --border-color: rgb(112, 113, 144);
+
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: rgb(235, 234, 234);
+  filter:
+    drop-shadow(var(--more) 0 0 var(--border-color))
+    drop-shadow(var(--minus) 0 0 var(--border-color))
+    drop-shadow(0 var(--more) 0 var(--border-color))
+    drop-shadow(0 var(--minus) 0 var(--border-color));
+}
+
+
+/* Card */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin-bottom: 0.5rem;
+  color: #1e90ff;
+  font-size: 1.25rem;
+  /* Ahora sin enlace */
+}
+
+.card-content p {
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Botón Leer más */
+.leer-mas {
+  display: inline-block;
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.leer-mas:hover {
+  background-color: #0d6efd;
+}
+/* footer */
+footer a {
+  color: #1e90ff;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  border-top: 1px solid #444;
+}
+

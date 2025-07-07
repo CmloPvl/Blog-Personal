@@ -1,0 +1,66 @@
+
+/* Estilo para el portafolio.html */
+
+
+
+
+.articulo-detalle {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  padding-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+
+.articulo-detalle h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1e90ff;
+}
+
+.articulo-detalle p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.articulo-detalle ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.boton-ver {
+  display: inline-block;
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-ver:hover {
+  background-color: #0d6efd;
+}
+
+
+article h2:last-of-type {
+  /* estilos aquí */
+  color: #1e90ff;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.imagen-portafolio {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+

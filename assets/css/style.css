@@ -52,7 +52,7 @@ header {
   -webkit-text-fill-color: transparent;
   animation: move 4s linear alternate infinite;
   letter-spacing: 1rem;
-  word-spacing: 1rem;
+  word-spacing: 2rem;
   
 }
 

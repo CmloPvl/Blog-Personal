@@ -1,3 +1,46 @@
+
+
+
+/* Ancho y color base */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track (fondo de la scrollbar) */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+::-webkit-resizer {
+  background: green;
+}
+
+/* Thumb (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Hover para más contraste */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Botones opcionales (si se muestran) */
+::-webkit-scrollbar-button {
+  background: #0072ff;
+  border-radius: 6px;
+}
+
+/* Esquina */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
 .recursos {
   max-width: 800px;
   margin: 2rem auto;

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/animaciones.css" />
+    <title>Camilo Dev Blog - Animaciones</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Camilo Dev Blog</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="tutoriales.html">Tutoriales</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="sobre-mi.html">Sobre mí</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Demostraciones de Animaciones CSS y JavaScript</h1>
+
+      <!-- Animaciones básicas -->
+      <section>
+        <h2>Animaciones Básicas</h2>
+        <div class="box6"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </section>
+
+      <!-- Transiciones interactivas -->
+      <section>
+        <h2>Transiciones Interactivas</h2>
+        <div class="element"></div>
+        <div class="element1"></div>
+        <div class="element2" title="Haz clic para alternar"></div>
+        <div class="element3">Hover me!</div>
+      </section>
+
+      <!-- Dialog con transición -->
+      <section>
+        <h2>Dialog con Transición</h2>
+        <button class="btn1">Mostrar/ocultar diálogo</button>
+        <label>
+          <input class="discrete" type="checkbox" /> Usar allow-discrete
+        </label>
+        <dialog>¡Hola amigos!</dialog>
+      </section>
+
+      <!-- Más animaciones -->
+      <section>
+        <h2>Animaciones Complejas</h2>
+        <div class="element4"></div>
+        <div class="element5"></div>
+      </section>
+
+      <!-- Sprite animations -->
+      <section>
+        <h2>Animaciones de Sprites</h2>
+        <div class="bernard"></div>
+        <div class="bernard1"></div>
+        <div class="bernard2"></div>
+      </section>
+
+      <!-- Offset path -->
+      <section>
+        <h2>Animaciones con Offset Path</h2>
+        <div class="element6"></div>
+
+        <div class="container1">
+          <div class="box box-1"></div>
+          <div class="box box-2"></div>
+          <div class="box box-3"></div>
+        </div>
+      </section>
+
+      <!-- Controles interactivos -->
+      <section>
+        <h2>Controles Interactivos de Ray Path</h2>
+        <div class="controls">
+          <label>
+            Angle:
+            <input type="range" min="0" max="1" step="0.05" value="0.25" />
+            <output>0.25turn</output>
+          </label>
+          <label>
+            Size:
+            <select class="size">
+              <option value="closest-side">closest-side</option>
+              <option value="farthest-side">farthest-side</option>
+              <option value="closest-corner">closest-corner</option>
+              <option value="farthest-corner">farthest-corner</option>
+              <option value="sides">sides</option>
+            </select>
+          </label>
+          <label> Contain: <input class="contain" type="checkbox" /> </label>
+          <code>offset-path: ray(0.25turn)</code>
+        </div>
+
+        <div class="container">
+          <div class="box"></div>
+        </div>
+      </section>
+
+      <!-- SVG y clip path -->
+      <section>
+        <h2>SVG y Clip Path</h2>
+        <svg width="200" height="200" viewBox="0 0 200 200">
+          <path
+            fill="none"
+            stroke="#000"
+            stroke-width="2"
+            d="M0,0 L200,0 L200,200 L0,0 Z"
+          />
+        </svg>
+        <div class="box4"></div>
+
+        <div class="container10">
+          <div class="box10"></div>
+        </div>
+
+        <svg width="450" height="200" viewBox="0 0 450 200">
+          <path
+            id="first"
+            fill="none"
+            stroke="#000"
+            stroke-width="2"
+            d="M0,0 L200,0 L200,200 L0,0 Z"
+          />
+          <path
+            id="second"
+            fill="none"
+            stroke="#000"
+            stroke-width="2"
+            d="M250,0 L450,0 L250,200 L250,0 Z"
+          />
+        </svg>
+      </section>
+
+      <!-- Timing functions -->
+      <section>
+        <h2>Funciones de Tiempo</h2>
+        <div class="timing-demo">
+          <div class="element33 ease">ease</div>
+          <div class="element33 linear">linear</div>
+          <div class="element33 ease-in">ease-in</div>
+          <div class="element33 ease-out">ease-out</div>
+          <div class="element33 ease-in-out">ease-in-out</div>
+        </div>
+
+        <div class="element44 linear">linear</div>
+        <div class="element44 cubic-bezier">cubic-bezier</div>
+
+        <div class="container55">
+          <div class="element111 linear1"></div>
+          <div class="element111 ease1"></div>
+          <div class="element111 custom1"></div>
+        </div>
+
+        <div class="container34">
+          <div class="element34 linear51"></div>
+          <div class="element34 steps51"></div>
+        </div>
+
+        <div class="container22">
+          <div class="element22 jump-start">jump-start</div>
+          <div class="element22 jump-end">jump-end</div>
+          <div class="element22 jump-none">jump-none</div>
+          <div class="element22 jump-both">jump-both</div>
+          <div class="element22 step-start">step-start</div>
+          <div class="element22 step-end">step-end</div>
+        </div>
+      </section>
+
+      <!-- Scroll timeline -->
+      <section>
+        <h2>Scroll Timeline</h2>
+        <div class="container34">
+          <div class="box34"></div>
+          <div class="scroll34">
+            Esto es una prueba con mucho contenido de texto para crear
+            desplazamiento. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae
+            consequuntur voluptatum laborum numquam blanditiis harum quisquam
+            eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!
+            Provident similique accusantium nemo autem. Veritatis obcaecati
+            tenetur iure eius earum ut molestias architecto voluptate aliquam
+            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat,
+            odit, tenetur error, harum nesciunt ipsum debitis quas aliquid.
+          </div>
+        </div>
+      </section>
+
+      <!-- View transition -->
+      <section>
+        <h2>View Transition</h2>
+        <div class="container111">
+          <div class="start element111">¡Púlsame!</div>
+          <div class="end element111"></div>
+        </div>
+      </section>
+
+      <!-- JavaScript animation -->
+      <section>
+        <h2>Animación con JavaScript</h2>
+        <div class="element66"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Camilo Dev Blog. Todos los derechos reservados.</p>
+      <p>
+        Sígueme en
+        <a
+          href="https://github.com/CmloPvl"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        |
+        <a
+          href="https://www.linkedin.com/in/camilo-riquelme-100719360/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+
+    <script src="assets/js/animaciones.js"></script>
+  </body>
+</html>

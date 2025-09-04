@@ -1,105 +1,59 @@
+:root {
+  /* 🎨 Paleta principal */
+  --color-gunmetal: #272d2d;   /* Fondo oscuro: sidebar, header, footer */
+  --color-rose-quartz: #a39ba8; /* Neutro elegante: títulos secundarios, bordes */
+  --color-powder-blue: #b8c5d6; /* Fondo de secciones, tarjetas, cajas */
+  --color-alice-blue: #edf5fc;  /* Fondo principal, mantiene contraste con el texto */
+  --color-emerald: #23ce6b;     /* Color acento: botones, enlaces, hover */
+
+  /* 🖋️ Texto */
+  --color-text-primary: #272d2d; /* Texto principal (sobre fondos claros) */
+  --color-text-secondary: #555;  /* Texto secundario/descriptivo */
+  --color-text-light: #edf5fc;   /* Texto claro (sobre fondos oscuros) */
+}
+
 /* Reset básico para consistencia cross-browser */
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-
 
 /* Fuente base */
 html {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   font-size: 16px;
-  font-weight: 700;
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-alice-blue);
 }
 
 /* Estilos base para body */
 body {
-  line-height: 1.5;
-  background: linear-gradient(to bottom, #f2f2f2, #2e8ed2);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* altura mínima: toda la ventana */
-  margin: 0;
-}
-
-/* Ancho de la scrollbar */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-/* Track: fondo de la barra */
-::-webkit-scrollbar-track {
-  background: #1e1e1e;
-  border-radius: 10px;
-}
-
-/* Thumb: la parte que se mueve */
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #3a3a3a, #5a5a5a);
-  border-radius: 10px;
-  border: 2px solid #1e1e1e; /* Borde para separar del track */
-}
-
-/* Hover sobre el thumb */
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #555, #777);
-}
-
-/* Botones (si el navegador los muestra) */
-::-webkit-scrollbar-button {
-  background: #2a2a2a;
-  height: 6px;
-}
-
-/* Esquina donde se cruzan las scrollbars (por ejemplo, en cajas) */
-::-webkit-scrollbar-corner {
-  background: #1e1e1e;
+  color: var(--color-text-primary);
+  background: var(--color-alice-blue);
+  min-height: 100vh;
 }
 
 /* Header y navbar */
 header {
-  background-color: #222;
-  padding: 1rem 3rem;
+  background-color: var(--color-gunmetal);
+  width: 100%;
+  padding: 1rem 2rem;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  width: 100%;
 }
 
 .logo {
-  color: #1e90ff;
-  font-weight: 700;
-  font-size: 1.75rem;
-  cursor: default;
-  -webkit-text-stroke: 0.5px white;
+  font-size: 1.5rem;
   font-weight: bold;
-  background-image: linear-gradient(var(--angle), rgb(228, 228, 233), rgb(65, 59, 185));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: move 4s linear alternate infinite;
-  letter-spacing: 1rem;
-  word-spacing: 2rem;
-  
-}
-
-@keyframes move {
-  0% { --angle: 0.25turn }
-  100% { --angle: 0.75turn }
-}
-
-@property --angle {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: 0turn;
-  
+  color: var(--color-emerald);
+  margin-right: auto;
 }
 
 .nav-links {
@@ -109,42 +63,75 @@ header {
 }
 
 .nav-links a {
-  color: #eee;
+  color: var(--color-text-light);
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: color 0.3s, background 0.3s;
 }
 
 .nav-links a:hover {
-  color: #1e90ff;
+  color: var(--color-gunmetal);
+  background: var(--color-emerald);
 }
 
-/* termino de css para header y comienzo de card */
-
-main {
-  flex: 1;
-}
-
-
-/* footer */
-footer a {
-  color: #1e90ff;
-  text-decoration: none;
-  margin: 0 0.3rem;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
+/* Footer con Flexbox y responsividad */
 footer {
-  background-color: #222;
-  color: #eee;
-  text-align: center;
+  background-color: var(--color-gunmetal);
+  color: var(--color-text-light);
+  width: 100%;
   padding: 1rem 2rem;
-  font-size: 0.9rem;
-  margin-top: 3rem;
-  border-top: 1px solid #444;
+  border-top: 1px solid var(--color-rose-quartz);
+  text-align: center;
 }
 
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: var(--color-emerald);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--color-powder-blue);
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+
+/* Scrollbar personalizado
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--color-powder-blue);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-rose-quartz);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-emerald);
+} */
+
+/* ...otros estilos globales si los necesitas... */

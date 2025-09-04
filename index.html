@@ -11,124 +11,142 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/home.css" />
-    <title>CmloPvl Dev Blog</title>
+    <title>Prueba - Animaciones en CSS</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">Camilo Dev Blog</div>
-        <ul class="nav-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="tutoriales.html">Tutoriales</a></li>
-          <li><a href="recursos.html">Recursos</a></li>
-          <li><a href="sobre-mi.html">Sobre mí</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="articulos-destacados">
-        <h2>Artículos recientes</h2>
-
-        <article class="card">
-          <img src="assets/imgs/artiport.png" alt="Portafolio" />
-          <div class="card-content">
-            <h3>Mi portafolio: Cómo lo creé</h3>
-            <p>Proceso, tecnologías y aprendizajes del portafolio.</p>
-            <a href="portafolio.html" class="leer-mas"
-              >Leer artículo completo</a
-            >
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <img
+            src="assets/imgs/logo113-removebg-preview.png"
+            alt="Logo"
+            class="logo-img"
+          />
+        </div>
+        <nav>
+          <ul class="sidebar-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="tutoriales.html">Tutoriales</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-content">
+        <header>
+          <nav class="navbar">
+            <div class="logo">CmloPvl Blog</div>
+            <ul class="nav-links">
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="sobre-mi.html">Sobre mí</a></li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <section class="articulos-destacados">
+            <h2>Artículos</h2>
+            <article class="card">
+              <img src="assets/imgs/artiport.png" alt="Portafolio" />
+              <div class="card-content">
+                <h3>Mi portafolio: Cómo lo creé</h3>
+                <p>
+                  Proceso, tecnologías y aprendizajes del portafolio, en
+                  constante evolución.
+                </p>
+                <a href="portafolio.html" class="leer-mas"
+                  >Leer artículo completo</a
+                >
+              </div>
+            </article>
+            <article class="card">
+              <img src="assets/imgs/screnopi.png" alt="Opinión" />
+              <div class="card-content">
+                <h3>Mi opinión sobre aprender en 2025</h3>
+                <p>Reflexión personal sobre estudiar desarrollo web hoy.</p>
+                <a href="opinion.html" class="leer-mas"
+                  >Leer artículo completo</a
+                >
+              </div>
+            </article>
+            <article class="card">
+              <img src="assets/imgs/artcv.png" alt="cv" />
+              <div class="card-content">
+                <h3>Creando mi Curriculum</h3>
+                <p>
+                  Desarrollé mi currículum utilizando únicamente HTML y CSS,
+                  aplicando principios de diseño responsive mediante media
+                  queries. Utilicé display: flex para organizar el contenido de
+                  forma eficiente y recurrí al uso estratégico de padding y
+                  margin para lograr una estructura limpia y bien espaciada en
+                  distintos tamaños de pantalla.
+                </p>
+                <a href="cv.html" class="leer-mas">Leer artículo completo</a>
+              </div>
+            </article>
+            <article class="card">
+              <img src="assets/imgs/animacionesart.png" alt="ani" />
+              <div class="card-content">
+                <h3>Aprendiendo de Animaciones</h3>
+                <p>Página que útilice para aprender sobre animaciones</p>
+                <a href="animaciones.html" class="leer-mas"
+                  >Leer artículo completo</a
+                >
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-content">
+                <h3>Próximo artículo</h3>
+                <p>Contenido en desarrollo...</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-content">
+                <h3>Próximo artículo</h3>
+                <p>Contenido en desarrollo...</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-content">
+                <h3>Próximo artículo</h3>
+                <p>Contenido en desarrollo...</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-content">
+                <h3>Próximo artículo</h3>
+                <p>Contenido en desarrollo...</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-content">
+                <h3>Próximo artículo</h3>
+                <p>Contenido en desarrollo...</p>
+              </div>
+            </article>
+          </section>
+        </main>
+        <footer>
+          <div class="footer-content">
+            <div class="footer-links">
+              <a
+                href="https://github.com/CmloPvl"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a
+                href="https://www.linkedin.com/in/camilo-riquelme-100719360/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </div>
+            <p>&copy; 2025 CmloPvl Blog. Todos los derechos reservados.</p>
           </div>
-        </article>
-
-        <article class="card">
-          <img src="assets/imgs/screnopi.png" alt="Opinión" />
-          <div class="card-content">
-            <h3>Mi opinión sobre aprender en 2025</h3>
-            <p>Reflexión personal sobre estudiar desarrollo web hoy.</p>
-            <a href="opinion.html" class="leer-mas">Leer artículo completo</a>
-          </div>
-        </article>
-
-        <!-- 7 tarjetas adicionales vacías como placeholder -->
-        <article class="card">
-          <img src="assets/imgs/artcv.png" alt="cv" />
-          <div class="card-content">
-            <h3>Creando mi Curriculum</h3>
-            <p>
-              Desarrollé mi currículum utilizando únicamente HTML y CSS,
-              aplicando principios de diseño responsive mediante media queries.
-              Utilicé display: flex para organizar el contenido de forma
-              eficiente y recurrí al uso estratégico de padding y margin para
-              lograr una estructura limpia y bien espaciada en distintos tamaños
-              de pantalla.
-            </p>
-            <a href="cv.html" class="leer-mas">Leer artículo completo</a>
-          </div>
-        </article>
-        <article class="card">
-          <img src="assets/imgs/animacionesart.png" alt="ani" />
-          <div class="card-content">
-            <h3>Aprendiendo de Animaciones</h3>
-            <p>Página que útilice para aprender sobre animaciones</p>
-            <a href="animaciones.html" class="leer-mas"
-              >Leer artículo completo</a
-            >
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-content">
-            <h3>Próximo artículo</h3>
-            <p>Contenido en desarrollo...</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-content">
-            <h3>Próximo artículo</h3>
-            <p>Contenido en desarrollo...</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-content">
-            <h3>Próximo artículo</h3>
-            <p>Contenido en desarrollo...</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-content">
-            <h3>Próximo artículo</h3>
-            <p>Contenido en desarrollo...</p>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-content">
-            <h3>Próximo artículo</h3>
-            <p>Contenido en desarrollo...</p>
-          </div>
-        </article>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Camilo Dev Blog. Todos los derechos reservados.</p>
-      <p>
-        Sígueme en
-        <a
-          href="https://github.com/CmloPvl"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-        |
-        <a
-          href="https://www.linkedin.com/in/camilo-riquelme-100719360/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LinkedIn</a
-        >
-      </p>
-    </footer>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>

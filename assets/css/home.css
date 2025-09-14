@@ -429,15 +429,9 @@ header {
     overflow-x: hidden;
   }
 }
-#barco {
-  transition: filter 0.3s ease;
-  cursor: pointer;
+.hidden-link {
+  display: block;
 }
-
-#barco:hover {
-  filter: grayscale(100%);
-}
-
 /* Animación de aparición para el menú */
 @keyframes fadeInMenu {
   from { opacity: 0; transform: translateY(-10px);}

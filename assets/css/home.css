@@ -303,8 +303,64 @@ header {
   color: var(--color-gunmetal);
 }
 
+@media (min-width: 769px) and (max-width: 992px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  header {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    background: var(--color-emerald);
+    color: var(--color-gunmetal);
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    z-index: 1001;
+  }
+  #nav-toggle {
+    display: none;
+    position: absolute;
+    top: 7.8rem;
+    left:  38.5rem;
+    width: 80vw;
+    max-width: 150px;
+    background: var(--color-gunmetal);
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    z-index: 1000;
+    padding: 1rem 0;
+    animation: fadeInMenu 0.2s;
+    font-family: 'Story Script', 'sans-serif';
+  }
+  #nav-toggle.active {
+    display: block;
+  }
 
-@media (max-width: 900px) {
+  .sidebar {
+    flex-direction: row;
+    min-height: auto;
+    width: 100vw;
+    max-width: 100vw;
+    position: static;
+    height: auto;
+    border-bottom: 2px solid var(--color-emerald);
+    justify-content: space-around;
+  }
+}
+@media (max-width: 768px) {
   html, body {
     overflow-x: hidden;
     width: 100vw;

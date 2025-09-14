@@ -84,7 +84,6 @@
 }
 /* Botón hamburguesa: estilo completo, siempre definido */
 .menu-toggle {
-
   display: none; /* oculto en desktop */
 }
 .sidebar-links a:hover {
@@ -108,7 +107,41 @@ header {
   border-bottom: solid 3px var(--color-rose-quartz);
 }
 
-/* Título animado en navbar */
+#barco {
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+#barco:hover {
+  filter: sepia(10%);
+}
+
+#mundo {
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+#mundo:hover {
+  filter: brightness(1.2);
+}
+
+
+#mapa {
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+#mapa:hover {
+  filter: saturate(1.5);
+}
+
+
+#campamento {
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+#campamento:hover {
+  filter: grayscale(100%);
+}
+
+
 .logo {
   font-size: 2.5rem;
   font-weight: bold;
@@ -168,6 +201,9 @@ header {
 .nav-links a:hover::after {
   width: 100%;
 }
+.hidden-link {
+  display: none;
+}
 
 /* Galería de cards en 2 columnas, todas igual tamaño */
 .articulos-destacados {
@@ -215,7 +251,7 @@ header {
 }
 
 .card:hover {
-  transform: scale(1.105);
+  transform: scale(1.05);
   box-shadow: 0 8px 24px rgba(39,45,45,0.2);
 }
 
@@ -392,6 +428,14 @@ header {
     padding-right: 0;
     overflow-x: hidden;
   }
+}
+#barco {
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+#barco:hover {
+  filter: grayscale(100%);
 }
 
 /* Animación de aparición para el menú */
